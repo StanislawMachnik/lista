@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/produkt"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:hint="Nazwa produktu..."
+            android:ems="15"/>
+        <EditText
+            android:id="@+id/cena"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:hint="Wpisz cenę..."
+            android:inputType="numberDecimal"
+            android:ems="15"
+            />
+        <EditText
+            android:id="@+id/opis"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:hint="Wpisz opis..."
+            android:ems="15"
+            />
+        <Button
+            android:id="@+id/dodaj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dodaj"/>
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+    <ListView
+        android:id="@+id/lista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
